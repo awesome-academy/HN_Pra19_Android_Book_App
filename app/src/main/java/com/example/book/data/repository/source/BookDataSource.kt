@@ -1,15 +1,13 @@
 package com.example.book.data.repository.source
 
 interface BookDataSource {
-
     /**
      * Local
      */
-    interface Local {}
+    interface Local
 
     /**
      * Remote
      */
-    interface Remote {}
-
+    interface Remote
 }
