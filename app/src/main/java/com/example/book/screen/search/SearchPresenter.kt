@@ -16,5 +16,4 @@ class SearchPresenter : SearchContract.Presenter {
     override fun setView(view: SearchContract.View?) {
         this.view = checkNotNull(view)
     }
-
 }
