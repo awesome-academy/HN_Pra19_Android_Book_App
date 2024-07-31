@@ -2,4 +2,7 @@
     <string name="app_name" translatable="false">Android-template</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="my_books">My Books</string>
+    <string name="search_hint" translatable="false">Search</string>
+    <string name="search_results" translatable="false">Results</string>
+    <string name="search_see_all" translatable="false">See All</string>
 </resources>
