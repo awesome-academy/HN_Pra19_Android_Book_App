@@ -93,7 +93,10 @@
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 
+    
+
     <androidx.recyclerview.widget.RecyclerView
+        android:visibility="visible"
         android:id="@+id/rv_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

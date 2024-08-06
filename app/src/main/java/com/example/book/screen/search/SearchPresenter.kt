@@ -33,8 +33,6 @@ class SearchPresenter(private val repository: BookRepository) : SearchContract.P
         repository.getBooksByTitle(
             object : OnResultListener<List<Book>> {
                 override fun onSuccess(data: List<Book>) {
-                    Log.d("SearchPresenter", "searchTitleBook: onSuccess: data = $textSearch")
-                    Log.d("SearchPresenter", "searchTitleBook: onSuccess: data = $data")
                     view?.onGetBookSuccess(data)
                 }
 
@@ -62,9 +60,11 @@ class SearchPresenter(private val repository: BookRepository) : SearchContract.P
     }
 
     private fun searchGenresBook(textSearch: String) {
+        Log.d("searchGenresBook", textSearch)
         repository.getBooksByGenres(
             object : OnResultListener<List<Book>> {
                 override fun onSuccess(data: List<Book>) {
+                    Log.d("searchGenresBook", data.toString())
                     view?.onGetBookSuccess(data)
                 }
 
